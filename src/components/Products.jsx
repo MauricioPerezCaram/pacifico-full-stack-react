@@ -27,7 +27,6 @@ function Products() {
             <h2>{each.title}</h2>
             <img src={each.photo} alt={each.title} />
             <h4>${each.price}</h4>
-            <h4>Categoría: {each.category}</h4>
             <h5>Stock: {each.stock}</h5>
           </div>
         ))}
