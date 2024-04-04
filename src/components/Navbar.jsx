@@ -9,12 +9,14 @@ function BarraNavegacion() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Navbar.Brand href="#home">Inicio</Navbar.Brand>
-            <Nav.Link href="#home">Productos</Nav.Link>
-            <Nav.Link href="#link">Carrito</Nav.Link>
-            <Nav.Link href="#link">Perfil</Nav.Link>
-            <Nav.Link href="#link">Iniciar sesión</Nav.Link>
-            <Nav.Link href="#link">Cerrar sesión</Nav.Link>
+            <Nav.Link href="#inicio">Inicio</Nav.Link>
+            <Nav.Link href="#productos">Productos</Nav.Link>
+            <Nav.Link href="#creaunproducto">Crea un producto</Nav.Link>
+            <Nav.Link href="#carrito">Carrito</Nav.Link>
+            <Nav.Link href="#registrate">Registrate</Nav.Link>
+            <Nav.Link href="#perfil">Perfil</Nav.Link>
+            <Nav.Link href="#iniciarsesión">Iniciar sesión</Nav.Link>
+            <Nav.Link href="#cerrarsesión">Cerrar sesión</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
