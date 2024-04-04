@@ -26,8 +26,9 @@ function Products() {
           <div className="card-product">
             <h2>{each.title}</h2>
             <img src={each.photo} alt={each.title} />
-            <h3>${each.price}</h3>
-            <h4>Stock: {each.stock}</h4>
+            <h4>${each.price}</h4>
+            <h4>{each.category}</h4>
+            <h5>Stock: {each.stock}</h5>
           </div>
         ))}
       </div>
