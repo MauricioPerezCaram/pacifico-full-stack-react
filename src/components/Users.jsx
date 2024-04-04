@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function Products() {
-  const [products, setProducts] = useState([]);
+function Users() {
+  const [users, setUsers] = useState([]);
   const [prev, setPrev] = useState(null);
   const [next, setNext] = useState(null);
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/products")
+      .get("http://localhost:8080/api/users")
       .then((res) => {
         console.log(res.data.response);
-        // setProducts(res.data.response.docs);
-        setProducts(res.data.response);
+        // setUsers(res.data.response.docs);
+        setUsers(res.data.response);
         setPrev(res.data.response.prevPage);
         setNext(res.data.response.nextPage);
       })
@@ -22,12 +22,14 @@ function Products() {
   return (
     <section>
       <div className="card-container">
-        {products.map((each) => (
+        {users.map((each) => (
           <div className="card-product">
-            <h2>{each.title}</h2>
-            <img src={each.photo} alt={each.title} />
-            <h3>${each.price}</h3>
-            <h4>Stock: {each.stock}</h4>
+            <h2>
+              {each.name} {each.lastname}
+            </h2>
+            <img src={each.photo} alt={each.name} />
+            <h3>{each.email}</h3>
+            <h4>Role: {each.role}</h4>
           </div>
         ))}
       </div>
@@ -39,4 +41,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Users;

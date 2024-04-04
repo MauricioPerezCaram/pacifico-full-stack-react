@@ -1,7 +1,8 @@
 import "./App.css";
 import BarraNavegacion from "./components/Navbar";
-import Products from "./components/Products";
 import TituloPpal from "./components/TituloPpal";
+import Products from "./components/Products";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <BarraNavegacion></BarraNavegacion>
       <TituloPpal></TituloPpal>
       <Products></Products>
+      <Users></Users>
     </div>
   );
 }
