@@ -5,6 +5,7 @@ import Index from "./components/Index";
 import Products from "./components/Products";
 import Users from "./components/Users";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CrearProducto from "./components/CrearProducto";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/usuarios" element={<Users />} />
           <Route path="/productos" element={<Products />} />
+          <Route path="/crearproducto" element={<CrearProducto />} />
         </Routes>
       </BrowserRouter>
     </div>

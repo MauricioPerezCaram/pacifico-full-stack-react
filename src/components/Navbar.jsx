@@ -13,23 +13,23 @@ function BarraNavegacion() {
             <Nav.Link as={Link} to="/">
               Inicio
             </Nav.Link>
-            <Nav.Link as={Link} to="/productos">
-              Productos
-            </Nav.Link>
-            <Nav.Link as={Link} to="/creaunproducto">
+            <Nav.Link as={Link} to="/crearproducto">
               Crea un producto
             </Nav.Link>
-            <Nav.Link as={Link} to="/carrito">
-              Carrito
+            <Nav.Link as={Link} to="/productos">
+              Productos
             </Nav.Link>
             <Nav.Link as={Link} to="/registrate">
               Registrate
             </Nav.Link>
+            <Nav.Link as={Link} to="/perfil">
+              Perfil
+            </Nav.Link>
             <Nav.Link as={Link} to="/usuarios">
               Usuarios
             </Nav.Link>
-            <Nav.Link as={Link} to="/perfil">
-              Perfil
+            <Nav.Link as={Link} to="/carrito">
+              Carrito
             </Nav.Link>
             <Nav.Link as={Link} to="/iniciarsesión">
               Iniciar sesión
