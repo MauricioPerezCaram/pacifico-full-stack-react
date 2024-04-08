@@ -6,6 +6,7 @@ import Products from "./components/Products";
 import Users from "./components/Users";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CrearProducto from "./components/CrearProducto";
+import CrearUsuario from "./components/CrearUsuario";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/usuarios" element={<Users />} />
           <Route path="/productos" element={<Products />} />
           <Route path="/crearproducto" element={<CrearProducto />} />
+          <Route path="/crearusuario" element={<CrearUsuario />} />
         </Routes>
       </BrowserRouter>
     </div>

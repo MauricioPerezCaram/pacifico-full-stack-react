@@ -22,8 +22,14 @@ function BarraNavegacion() {
             <Nav.Link as={Link} to="/registrate">
               Registrate
             </Nav.Link>
+            <Nav.Link as={Link} to="/crearusuario">
+              Crear usuario
+            </Nav.Link>
             <Nav.Link as={Link} to="/perfil">
               Perfil
+            </Nav.Link>
+            <Nav.Link as={Link} to="/crearusuario">
+              Crear usuario
             </Nav.Link>
             <Nav.Link as={Link} to="/usuarios">
               Usuarios
