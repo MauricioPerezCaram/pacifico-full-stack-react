@@ -9,7 +9,7 @@ function CrearProducto() {
     category: "",
     price: "",
     stock: "",
-    image: "",
+    photo: "",
     description: "",
   });
 
@@ -31,7 +31,7 @@ function CrearProducto() {
           category: "",
           price: "",
           stock: "",
-          image: "",
+          photo: "",
           description: "",
         });
       })
@@ -83,8 +83,8 @@ function CrearProducto() {
           <Form.Label>Imagen</Form.Label>
           <Form.Control
             type="text"
-            name="image"
-            value={producto.image}
+            name="photo"
+            value={producto.photo}
             onChange={handleChange}
           />
         </Form.Group>
